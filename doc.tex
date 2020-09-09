@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\title{XMonad KeyMap QuasiQuoter}
+
+\setlength\parindent{0pt}
+
+%include polycode.fmt
+
+% Copied the first one and edited it to make the rest. Otherwise, it looks bad.
+\usepackage{mathtools}
+\usepackage{latexsym}
+%format <$> = "\mathbin{<\hspace{-1.6pt}\mathclap{\raisebox{0.1pt}{\scalebox{.8}{\$}}}\hspace{-1.6pt}>}"
+%format <$ = "\mathbin{<\hspace{-1.6pt}\mathclap{\raisebox{0.1pt}{\scalebox{.8}{\$}}}\hspace{2.4pt}}"
+%format $> = "\mathbin{\hspace{2.4pt}\mathclap{\raisebox{0.1pt}{\scalebox{.8}{\$}}}\hspace{-1.6pt}>}"
+%format <*> = "\mathbin{<\hspace{-3.8pt}\ast{}\hspace{-3.8pt}>}"
+%format *> = "\mathbin{\ast{}\hspace{-4.4pt}>}"
+%format <* = "\mathbin{<\hspace{-4.4pt}\ast{}}"
+%format <|> = "\mathbin{<\hspace{-2.8pt}|\hspace{-2.8pt}>}"
+%format <?> = "\mathbin{<\hspace{-1.6pt}\mathclap{\raisebox{0.1pt}{\scalebox{.8}{?}}}\hspace{-1.6pt}>}"
+%format <&> = "\mathbin{<\hspace{-1.6pt}\mathclap{\raisebox{0.1pt}{\scalebox{.8}{\&}}}\hspace{-1.6pt}>}"
+%format <> = "\mathbin{\Diamond}"
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+%include README
+\end{abstract}
+
+\tableofcontents
+
+\part{Internals}
+%include src/Types.lhs
+%include src/Parsers.lhs
+%include src/Lift.lhs
+
+\part{Exports}
+%include src/QQ.lhs
+%include src/Util.lhs
+
+\end{document}

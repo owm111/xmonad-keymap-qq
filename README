@@ -1,0 +1,9 @@
+Playing around with the idea of using a QuasiQuoter for key bindings in xmonad
+configurations. Currently, it is extremely limited (it can only bind keys to
+spawn actions), has some very overcomplicated nonsense, and is not tested well.
+
+Source files are literate Haskell primarily so I can keep notes of what all this
+junk is actually supposed to be doing and why it's doing it that way.
+
+Not actually intended for practical use. Maybe after lots of expansion,
+simplification, and testing, but certainly not now.
